@@ -15,7 +15,7 @@ class DemoApplicationTests {
     TestRestTemplate restTemplate;
 
     private static GenericContainer<?> devapp = new GenericContainer<>("devapp").withExposedPorts(8080);
-    private static GenericContainer<?> prodapp = new GenericContainer<>("devapp").withExposedPorts(8081);
+    private static GenericContainer<?> prodapp = new GenericContainer<>("prodapp").withExposedPorts(8081);
 
     @BeforeAll
     public static void setUp() {
